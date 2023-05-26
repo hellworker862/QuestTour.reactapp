@@ -1,0 +1,24 @@
+.headerTop {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerBottom {
+  margin-top: 20px;
+}
+
+.logo {
+  max-width: 191px;
+  max-height: 69px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.accountContent {
+  font-size: 24px;
+}

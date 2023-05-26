@@ -1,0 +1,29 @@
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.labelToggle {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: var(--main-focus);
+}
+
+input[type="radio"]:checked + .labelToggle {
+  color: #fff;
+  background: var(--additional-focus);
+}
+
+.labelToggle + input[type="radio"] + .labelToggle {
+  border-left: solid 2px var(--additional-focus);
+}
+.toggleGroup {
+  border: solid 2px var(--additional-focus);
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}

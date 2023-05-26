@@ -1,0 +1,13 @@
+.inputText {
+  padding: 0 28px;
+  height: 42px;
+  min-width: 100px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.inputText::placeholder {
+  font-size: 16px;
+}

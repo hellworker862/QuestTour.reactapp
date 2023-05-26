@@ -1,0 +1,11 @@
+:root {
+    --light-background: #fff;
+    --dark-background: #293240;
+    --font-color: #0f2232;
+    --font-color-light: #93999f;
+    --substrate-background: #e9ecee;
+    --main-focus: #ff0000;
+    --additional-focus: #ff4346;
+    --btn-color-green: #22b573;
+    --btn-color-green-hover: #32ce88;
+  }

@@ -1,0 +1,58 @@
+@import "../../style.css";
+
+.underline {
+  position: relative;
+  cursor: pointer;
+}
+
+.underline:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: var(--main-focus); /*задаём цвет линии*/
+  content: "";
+  transition: width 0.25s ease-out;
+}
+
+.underline:hover:after,
+.underline:focus:after {
+  width: 100%;
+}
+
+.navbar {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbarContent {
+  text-align: center;
+  float: left;
+  margin: none;
+}
+
+.navbarContent .navbarItem {
+  display: inline-block;
+  padding: none;
+  margin: none;
+}
+
+.navbarContent .navbarItem .underline {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+.navbarContent .navbarItem .underline:hover {
+  color: var(--font-color);
+  transition: 0.3s;
+}
+
+.navbarItem .underline {
+  color: var(--font-color-light);
+  font-size: 18px;
+}
